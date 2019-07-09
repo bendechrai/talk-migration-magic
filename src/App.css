@@ -31,3 +31,29 @@
     transform: rotate(360deg);
   }
 }
+
+.title-overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  top: 5%;
+  bottom: 10%;
+}
+.title-overlay .diorama-title {
+  max-width: 100%;
+}
+.title-overlay .diorama-subtitle {
+  max-width: 100%;
+  font-size: 3vw;
+}
+
+.diorama-slide {
+  color: #fff;
+  background: #111;
+  text-shadow: 1rem 1rem 5px #222;
+}
+footer {
+  color: #fff;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px -1px 2px #000;
+}
