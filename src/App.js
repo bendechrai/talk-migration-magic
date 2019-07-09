@@ -10,7 +10,7 @@ function App() {
   return (
     <Deck footer={footer} presenterNotes>
       <Slide notes="Hello">
-        <Image src="/images/magician.jpg" full color="#777" />
+        <Image src="images/magician.jpg" full color="#777" />
         <div className="title-overlay">
           <div>
             <Title>✨ Abracadabra ✨</Title>
@@ -25,7 +25,7 @@ function App() {
       <Slide>
         <Columns>
           <div>
-            <Image src="/images/bendechrai.jpg" alt="Photo of Ben" full />
+            <Image src="images/bendechrai.jpg" alt="Photo of Ben" full />
           </div>
           <div>
             <Subtitle>Ben Dechrai</Subtitle>
@@ -41,7 +41,7 @@ function App() {
         <Title>Migration</Title>
       </Slide>
       <Slide>
-        <Image src="/images/waterfall.jpg" full color="#bbb" />
+        <Image src="images/waterfall.jpg" full color="#bbb" />
         <div className="title-overlay">
           <Title>Waterfall Lifecycle</Title>
         </div>
@@ -49,7 +49,7 @@ function App() {
       <Slide>
         <Columns>
           <div>
-            <Image src="/images/pieces.jpg" full color="#ccc" />
+            <Image src="images/pieces.jpg" full color="#ccc" />
           </div>
           <div>
             <List>
@@ -67,18 +67,18 @@ function App() {
             <Text>(The old product doesn't stay static)</Text>
           </div>
           <div>
-            <Image src="/images/nailedit.jpg" color="#ccc" />
+            <Image src="images/nailedit.jpg" color="#ccc" />
           </div>
         </Columns>
       </Slide>
       <Slide>
-        <Image src="/images/fire.jpg" full color="#777" />
+        <Image src="images/fire.jpg" full color="#777" />
         <div className="title-overlay">
           <Title>On launch day, migration fails</Title>
         </div>
       </Slide>
       <Slide>
-        <Image src="/images/fire.jpg" full color="#555" />
+        <Image src="images/fire.jpg" full color="#555" />
         <div className="title-overlay">
           <Title>Two options</Title>
           <Columns>
@@ -92,7 +92,7 @@ function App() {
         </div>
       </Slide>
       <Slide>
-        <Image src="/images/waterfall.jpg" full color="#f88" />
+        <Image src="images/waterfall.jpg" full color="#f88" />
         <div className="title-overlay">
           <Title>Not Waterfall Lifecycle</Title>
         </div>
@@ -104,7 +104,7 @@ function App() {
         <Subtitle>Refactoring != Rewriting</Subtitle>
       </Slide>
       <Slide>
-        <Image src="/images/transform.jpg" full color="#777" />
+        <Image src="images/transform.jpg" full color="#777" />
         <div className="title-overlay">
           <List>
             <ul>We refactor all the time</ul>
@@ -219,7 +219,7 @@ function App() {
       <Slide>
         <Columns>
           <div>
-            <Image src="/images/bendechrai.jpg" alt="Photo of Ben" full />
+            <Image src="images/bendechrai.jpg" alt="Photo of Ben" full />
           </div>
           <div>
             <Subtitle>Thanks</Subtitle>
