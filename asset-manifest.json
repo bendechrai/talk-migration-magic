@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/talk-migration-magic/static/css/main.9d5253b6.chunk.css",
-    "main.js": "/talk-migration-magic/static/js/main.190260d4.chunk.js",
-    "main.js.map": "/talk-migration-magic/static/js/main.190260d4.chunk.js.map",
+    "main.css": "/talk-migration-magic/static/css/main.d4d0df51.chunk.css",
+    "main.js": "/talk-migration-magic/static/js/main.d7d566ff.chunk.js",
+    "main.js.map": "/talk-migration-magic/static/js/main.d7d566ff.chunk.js.map",
     "runtime~main.js": "/talk-migration-magic/static/js/runtime~main.2bf0cb5c.js",
     "runtime~main.js.map": "/talk-migration-magic/static/js/runtime~main.2bf0cb5c.js.map",
-    "static/js/2.bbf259e6.chunk.js": "/talk-migration-magic/static/js/2.bbf259e6.chunk.js",
-    "static/js/2.bbf259e6.chunk.js.map": "/talk-migration-magic/static/js/2.bbf259e6.chunk.js.map",
+    "static/js/2.130d21b0.chunk.js": "/talk-migration-magic/static/js/2.130d21b0.chunk.js",
+    "static/js/2.130d21b0.chunk.js.map": "/talk-migration-magic/static/js/2.130d21b0.chunk.js.map",
     "index.html": "/talk-migration-magic/index.html",
-    "precache-manifest.010b58a062dd32436cff0c7431c8c814.js": "/talk-migration-magic/precache-manifest.010b58a062dd32436cff0c7431c8c814.js",
+    "precache-manifest.a615d2f80b3381289310edf42a7c9a18.js": "/talk-migration-magic/precache-manifest.a615d2f80b3381289310edf42a7c9a18.js",
     "service-worker.js": "/talk-migration-magic/service-worker.js",
-    "static/css/main.9d5253b6.chunk.css.map": "/talk-migration-magic/static/css/main.9d5253b6.chunk.css.map",
-    "static/media/logo.svg": "/talk-migration-magic/static/media/logo.5d5d9eef.svg"
+    "static/css/main.d4d0df51.chunk.css.map": "/talk-migration-magic/static/css/main.d4d0df51.chunk.css.map"
   }
 }
