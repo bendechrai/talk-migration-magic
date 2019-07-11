@@ -1,6 +1,5 @@
 import React from 'react';
 import { Deck, Slide, Title, Subtitle, Text, List, Image, Columns, Footer } from '@sambego/diorama';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -10,15 +9,16 @@ function App() {
   return (
     <Deck footer={footer} presenterNotes>
       <Slide notes="Hello">
-        <Image src="images/magician.jpg" full color="#777" />
+        <Image src="images/magician.jpg" full color="#999" />
         <div className="title-overlay">
           <div>
-            <Title>✨ Abracadabra ✨</Title>
+            <Title><span role="img">✨</span> Abracadabra <span role="img">✨</span></Title>
             <Title>Let Me In</Title>
           </div>
           <div>
             <Subtitle>Ben Dechrai</Subtitle>
-            <Text>Developer Evangelist @ Auth0</Text>
+            <Text>Developer Evangelist</Text>
+            <img src="images/auth0.png" style={{width: '200px'}} />
           </div>
         </div>
       </Slide>
@@ -30,7 +30,7 @@ function App() {
           <div>
             <Subtitle>Ben Dechrai</Subtitle>
             <List>
-              <li>I ❤️ Security</li>
+              <li>I <span role="img">❤️</span> Security</li>
               <li>Privacy Advocate</li>
               <li>Tech Evangelist @ Auth0</li>
             </List>
@@ -38,7 +38,10 @@ function App() {
         </Columns>
       </Slide>
       <Slide>
-        <Title>Migration</Title>
+        <Image src="images/birds.png" full color="#ccc" />
+        <div className="title-overlay">
+          <Title>Migration</Title>
+        </div>
       </Slide>
       <Slide>
         <Image src="images/waterfall.jpg" full color="#bbb" />
@@ -60,21 +63,22 @@ function App() {
         </Columns>
       </Slide>
       <Slide>
-        <Columns>
+        <Image src="images/nailedit.jpg" color="#ccc" />
+        <div className="title-overlay overlay-between">
           <div>
             <Title>The New</Title>
+          </div>
+          <div>
             <Subtitle>Same as the old</Subtitle>
             <Text>(The old product doesn't stay static)</Text>
           </div>
-          <div>
-            <Image src="images/nailedit.jpg" color="#ccc" />
-          </div>
-        </Columns>
+        </div>
       </Slide>
       <Slide>
         <Image src="images/fire.jpg" full color="#777" />
         <div className="title-overlay">
-          <Title>On launch day, migration fails</Title>
+          <Title>On launch day</Title>
+          <Subtitle>Migration fails</Subtitle>
         </div>
       </Slide>
       <Slide>
@@ -104,7 +108,7 @@ function App() {
         <Subtitle>Refactoring != Rewriting</Subtitle>
       </Slide>
       <Slide>
-        <Image src="images/transform.jpg" full color="#777" />
+        <Image src="images/transform.jpg" full color="#555" />
         <div className="title-overlay">
           <List>
             <ul>We refactor all the time</ul>
@@ -114,116 +118,163 @@ function App() {
         </div>
       </Slide>
       <Slide>
-        <Text>Break a product down into its major parts</Text>
+        <div className="title-overlay overlay-between">
+          <div>
+            <Subtitle>Refactoring</Subtitle>
+            <List ordered>
+              <li>Break a product down into its major parts</li>
+            </List>
+          </div>
+        </div>
       </Slide>
       <Slide>
-        <Text>Break a product down into its major parts</Text>
-        <Text>Pick one part, and refeactor that in to a component</Text>
+        <div className="title-overlay overlay-between">
+          <div>
+            <Subtitle>Refactoring</Subtitle>
+            <List ordered>
+              <li>Break a product down into its major parts</li>
+              <li>Pick one part, and refeactor that in to a component</li>
+            </List>
+          </div>
+        </div>
       </Slide>
       <Slide>
-        <Text>Break a product down into its basic components</Text>
-        <Text>Pick one part, and refeactor that in to a component</Text>
-        <Text>* This only works if you're migrating to something that can also use that component</Text>
+        <div className="title-overlay overlay-between">
+          <div>
+            <Subtitle>Refactoring</Subtitle>
+            <List ordered>
+              <li>Break a product down into its major parts</li>
+              <li>Pick one part, and refeactor that in to a component</li>
+            </List>
+          </div>
+          <Text>* Only works if the new platform can also use that component</Text>
+        </div>
       </Slide>
       <Slide>
         <List>
-          <li>Extract repeated code and put it in functions</li>
-          <li>Group functions in classes to combine logical collections</li>
-          <li>Group classes in to exportable modules / components</li>
+          <li>Repeated code <span role="img">➡️</span> a function</li>
+          <li>Related functions <span role="img">➡️</span> a class</li>
+          <li>Related classes <span role="img">➡️</span> a module or component</li>
         </List>
       </Slide>
       <Slide>
-        <Title>Don't reinvent the wheel</Title>
+        <Image src="images/wheels.jpg" full color="#555" />
+        <div className="title-overlay">
+          <Title>Don't reinvent the wheel</Title>
+        </div>
+      </Slide>
+      <Slide notes="Don't create a component that someone else has already written">
+        <Text>Many components exist already</Text>
       </Slide>
       <Slide>
-        <Text>Don't create a component that someone else has already written</Text>
+        <Image src="images/business.jpg" full color="#555" />
+        <div className="title-overlay">
+          <Subtitle>Not core business features</Subtitle>
+        </div>
       </Slide>
       <Slide>
-        <Text>If these components are not your core business features, they can be separated out in to libraries and be managed separately.</Text>
+        <Text>Existing libraries <span role="img">➡️</span> More community backing</Text>
       </Slide>
       <Slide>
-        <Text>Start replacing them with existing libraries which have more community backing and adoption.</Text>
+        <Image src="images/tugofwar.jpg" full color="#999" />
+        <div className="title-overlay">
+          <Subtitle>Submit a pull request!</Subtitle>
+        </div>
       </Slide>
       <Slide>
-        <Text>Doesn't quite work as you want? Submit a pull request!</Text>
+        <Subtitle>Can't find one? Make yours open source!</Subtitle>
+        <Columns>
+          <div>
+            <Image src="images/couple.jpg" full color="#595" />
+            <div className="title-overlay">
+              <Text>Help others</Text>
+            </div>
+          </div>
+          <div>
+            <Image src="images/faces.jpg" full color="#995" />
+            <div className="title-overlay">
+              <Text>Community<br/>recognition</Text>
+            </div>
+          </div>
+          <div>
+            <Image src="images/heart.jpg" full color="#955" />
+            <div className="title-overlay">
+              <Text>Developers will<br/>love your company</Text>
+            </div>
+          </div>
+          <div>
+            <Image src="images/programmer.jpg" full color="#559" />
+            <div className="title-overlay">
+              <Text>Code Contributions</Text>
+            </div>
+          </div>
+        </Columns>
       </Slide>
       <Slide>
-        <Text>Can't find one? Make yours open source! You'll be helping others, without giving away your business advantage.</Text>
-        <Text>In return, you'll get recognition from the community, build your company's brand in the eyes of developers, and people might even start volunteering to help you make your code even better!</Text>
+        <Image src="images/tired.gif" full color="#777" />
+        <div className="title-overlay">
+          <Title>Outsource the Mundane</Title>
+        </div>
       </Slide>
       <Slide>
-        <Text>Outsource the Mundane</Text>
+        <Subtitle>Move logic to "the cloud"</Subtitle>
       </Slide>
       <Slide>
-        <Text>The next level of refactoring is to move logic to the cloud, and away from your application altogether:</Text>
-        <List>
-          <li>host your images and other static assets with a CDN</li>
-          <li>use a payment provider to reduce the legal worries of processing credit cards yourself</li>
-          <li>use an identity provider to reduce the risk of storing user credential</li>
-        </List>
+        <Text>Static files <span role="img">➡️</span> CDN</Text>
       </Slide>
       <Slide>
-        <Text>Identify the components of your systems that can actually be systems in their own right. You're making the footprint of your main application much smaller now, which makes it easier to migrate. It also makes it easier to maintain in future, reduces the load on your servers, and makes scaling easier when you need to.</Text>
+        <Text>Outsource payment processing <span role="img">➡️</span>  Reduce the legal worries</Text>
+      </Slide>
+      <Slide>
+        <Text>Outsource identity management <span role="img">➡️</span>  Reduce the risk of storing passwords</Text>
+      </Slide>
+      <Slide>
+        <Image src="images/complex-simple.jpg" full color="#777" />
+        <div className="title-overlay overlay-between">
+          <div>
+            <Subtitle>Your application is now smaller</Subtitle>
+          </div>
+          <div>
+            <Text>Easier to migrate</Text>
+            <Text>Easier to maintain</Text>
+            <Text>Reduces server load</Text>
+            <Text>Makes scaling easier</Text>
+          </div>
+        </div>
       </Slide>
       <Slide>
         <Title>Demo</Title>
-      </Slide>
-      <Slide>
-        <Text>Let's look at migrating a simple blog from Wordpress to Laravel. What are the components in Wordpress that we need to consider?</Text>
-      </Slide>
-      <Slide>
-        <Title>Blog Posts</Title>
-        <Text>Business features - custom code</Text>
-        <Text>Migrate data from the Wordpress schema to your Laravel application</Text>
-      </Slide>
-      <Slide>
-        <Title>Commenting</Title>
-        <Text>Comments are associated with posts and users</Text>
-        <Text>Migrating would need to a comment table and model...</Text>
-        <Text>Associated with a user and blog post...</Text>
-      </Slide>
-      <Slide>
-        <Title>Commenting</Title>
-        <Text>Then we'd need to migrate the comments</Text>
-        <Text>and users associated with that comment,</Text>
-        <Text>and make the correct associations</Text>
-      </Slide>
-      <Slide>
-        <Title>Commenting</Title>
-        <Text>Ignoring the complexity of the user model for now, that's complex enough already.</Text>
-      </Slide>
-      <Slide>
-        <Title>Commenting</Title>
-        <Text>Let's outsource this to a system like Disqus</Text>
-        <Text>Low risk model - these comments are public anyway</Text>
-        <Text>Disqus do the migration for you!</Text>
-      </Slide>
-      <Slide>
-        <Title>Login, Logout & Registration</Title>
-      </Slide>
-      <Slide>
-        <Title>Login, Logout & Registration</Title>
-        <Text>We don't do our own credit card processing</Text>
-        <Text>So why our own identity management?</Text>
-      </Slide>
-      <Slide>
-        <Title>Login, Logout & Registration</Title>
-        <Text>Let's outsource this too, to an ID as a Service provider</Text>
-      </Slide>
-      <Slide>
-        <Text>At it's core, these components give you the Wordpress blog. There are many more features to Wordpress, but we'll just focus on these right now. What can we do about any of them?</Text>
-      </Slide>
-      <Slide>
-        <Title>Demo</Title>
+        <Columns>
+          <div>
+            <Image src="images/fire.jpg" full color="#733" />
+            <div className="title-overlay">
+              <Text>Demo catches fire</Text>
+            </div>
+          </div>
+          <div>
+            <Image src="images/celebration.jpg" full color="#773" />
+            <div className="title-overlay">
+              <Text>Demo works!</Text>
+            </div>
+          </div>
+        </Columns>
       </Slide>
       <Slide>
         <Columns>
           <div>
-            <Image src="images/bendechrai.jpg" alt="Photo of Ben" full />
+            <div className="title-overlay overlay-between">
+              <div>
+                <Title>Thanks</Title>
+                <Text>Questions?</Text>
+              </div>
+              <div>
+                <Text>Ben Dechrai</Text>
+                <img src="images/auth0.png" style={{width: '100px'}} />
+              </div>
+            </div>
           </div>
           <div>
-            <Subtitle>Thanks</Subtitle>
-            <Text>Questions?</Text>
+            <Image src="images/bendechrai.jpg" alt="Photo of Ben" full />
           </div>
         </Columns>
       </Slide>

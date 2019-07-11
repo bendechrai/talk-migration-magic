@@ -40,6 +40,9 @@
   top: 5%;
   bottom: 10%;
 }
+.title-overlay.overlay-between {
+  justify-content: space-between;
+}
 .title-overlay .diorama-title {
   max-width: 100%;
 }
