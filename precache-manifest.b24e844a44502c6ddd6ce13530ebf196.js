@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d14106d6fe74516d6100c8a0efa0445d",
+    "revision": "801545838786f7a5e1a861481b7a1c5c",
     "url": "/talk-migration-magic/index.html"
   },
   {
-    "revision": "64a34ee02f7e343c3532",
+    "revision": "d2f438fe1f0615406563",
     "url": "/talk-migration-magic/static/css/main.d4d0df51.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/talk-migration-magic/static/js/2.130d21b0.chunk.js"
   },
   {
-    "revision": "64a34ee02f7e343c3532",
-    "url": "/talk-migration-magic/static/js/main.d7d566ff.chunk.js"
+    "revision": "d2f438fe1f0615406563",
+    "url": "/talk-migration-magic/static/js/main.297ad2f3.chunk.js"
   },
   {
     "revision": "6d67fad1785cebe95e39",
