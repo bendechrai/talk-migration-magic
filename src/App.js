@@ -37,19 +37,19 @@ function App() {
           </div>
         </Columns>
       </Slide>
-      <Slide>
+      <Slide notes="Migration from one platform to another takes a lot of planning, testing, and usually rework.">
         <Image src="images/birds.png" full color="#ccc" />
         <div className="title-overlay">
           <Title>Migration</Title>
         </div>
       </Slide>
-      <Slide>
+      <Slide notes="- We used to use waterfall lifecycle">
         <Image src="images/waterfall.jpg" full color="#bbb" />
         <div className="title-overlay">
           <Title>Waterfall Lifecycle</Title>
         </div>
       </Slide>
-      <Slide>
+      <Slide notes="- Rewrite everything in one go">
         <Columns>
           <div>
             <Image src="images/pieces.jpg" full color="#ccc" />
@@ -62,7 +62,7 @@ function App() {
           </div>
         </Columns>
       </Slide>
-      <Slide>
+      <Slide notes="rebuild new like old -- old product changes -- some functionality you missed -- wasn't wasn't documented -- noone knew -- the original developer left the company">
         <Image src="images/nailedit.jpg" color="#ccc" />
         <div className="title-overlay overlay-between">
           <div>
@@ -107,13 +107,12 @@ function App() {
       <Slide>
         <Subtitle>Refactoring != Rewriting</Subtitle>
       </Slide>
-      <Slide>
-        <Image src="images/transform.jpg" full color="#555" />
+      <Slide notes="We refactor all the time -- we create tech debt to meet a deadline -- promise to fix it later">
+        <Image src="images/transform.jpg" full color="#444" />
         <div className="title-overlay">
           <List>
             <ul>We refactor all the time</ul>
-            <ul>We create technical debt to meet a deadline</ul>
-            <ul>With the promise of fixing it later</ul>
+            <ul>Because we create technical debt</ul>
           </List>
         </div>
       </Slide>
@@ -166,16 +165,16 @@ function App() {
       <Slide notes="Don't create a component that someone else has already written">
         <Text>Many components exist already</Text>
       </Slide>
-      <Slide>
+      <Slide notes="Many components won't contain core business functionality">
         <Image src="images/business.jpg" full color="#555" />
         <div className="title-overlay">
           <Subtitle>Not core business features</Subtitle>
         </div>
       </Slide>
-      <Slide>
+      <Slide notes="Benefit from the community's work">
         <Text>Existing libraries <span role="img">➡️</span> More community backing</Text>
       </Slide>
-      <Slide>
+      <Slide notes="Give back to that community by updating that component to suit your needs">
         <Image src="images/tugofwar.jpg" full color="#999" />
         <div className="title-overlay">
           <Subtitle>Submit a pull request!</Subtitle>
